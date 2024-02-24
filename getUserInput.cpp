@@ -3,8 +3,7 @@
 //
 #include <iostream>
 
-std::string functionParser() {
+void getUserInput() {
 
 
-  return calculatedFunction;
 }

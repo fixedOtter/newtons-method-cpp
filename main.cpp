@@ -51,7 +51,7 @@ int main () {
 
     userFunction newFunction;
 
-    std::cout << newFunction.getIndex();
+    // std::cout << newFunction.getIndex();
 
     // functionList.push_back()
 

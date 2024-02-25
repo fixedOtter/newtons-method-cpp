@@ -2,8 +2,9 @@
 // made by fixedOtter on 2.23.2024
 //
 #include <iostream>
-#include "functionParser.hpp"
-#include "getUserInput.hpp"
+#include <vector>
+//#include "functionParser.hpp"
+//#include "getUserInput.hpp"
 #include "functionClass.hpp"
 
 /*
@@ -35,11 +36,28 @@
 int main () {
   // initialize looping var
   bool quit = 0;
+
+  class userFunction;
   
   // while loop to continue with different functions
-  // while (!quit) {
-  //   getUserInput();
-  // }
+  while (!quit) {
+    // index value
+    int i = 0;
+    
+    // makes a vector list of user functions
+    // std::vector<userFunction> functionList;
+
+    // functionList.at(i).setIndex(i);
+
+    userFunction newFunction;
+
+    std::cout << newFunction.getIndex();
+
+    // functionList.push_back()
+
+    // getUserInput();
+
+  }
 
   return 0;
 }

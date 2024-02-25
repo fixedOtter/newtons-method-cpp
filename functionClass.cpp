@@ -17,6 +17,8 @@ class userFunction {
     std::vector<double> xAtnList;
     // list of known adjustments
     std::vector<double> adjustmentList;
+    // function index (of vector functionList in main)
+    int index;
 
   // getting and setting the values
   public:
@@ -35,6 +37,9 @@ class userFunction {
     }
     void setAdjustmentList(std::vector<double> adjList) {
       adjustmentList = adjList;
+    }
+    void setIndex(int i) {
+      index = i;
     }
   
     // getters
@@ -63,5 +68,8 @@ class userFunction {
     }
     std::vector<double> getAdjList() {
       return adjustmentList;
+    }
+    int getIndex() {
+      return index;
     }
 };

@@ -36,26 +36,26 @@
 int main () {
   // initialize looping var
   bool quit = 0;
-
-  class userFunction;
   
   // while loop to continue with different functions
   while (!quit) {
     // index value
     int i = 0;
+
+    // getting input
+    std::cout << "Please enter the function you'd like to add.\n Please use in terms of x and identify "
+
+    // making our current function object
+    userFunction curFunction;
     
-    // makes a vector list of user functions
-    // std::vector<userFunction> functionList;
+    // makes a vector list of user functions and adds current function
+    std::vector<userFunction> functionList;
+    functionList.push_back(curFunction);
 
-    // functionList.at(i).setIndex(i);
+    // set index on current function
+    functionList.at(i).setIndex(i);
 
-    userFunction newFunction;
-
-    // std::cout << newFunction.getIndex();
-
-    // functionList.push_back()
-
-    // getUserInput();
+    getUserInput();
 
   }
 

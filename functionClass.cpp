@@ -3,73 +3,55 @@
 //
 #include <iostream>
 #include <vector>
+#include "functionClass.hpp"
 
-class userFunction {
-  // actual values for the data
-  private:
-    // f of x
-    std::string function;
-    // derivative of f of x
-    std::string derivative;
-    // users guess of where zero is
-    double zero;
-    // list of known x values in the iteration
-    std::vector<double> xAtnList;
-    // list of known adjustments
-    std::vector<double> adjustmentList;
-    // function index (of vector functionList in main)
-    int index;
+// setters
+void userFunction::setFunction(std::string userFunction) {
+  function = userFunction;
+}
+void userFunction::setDerivativeFunction(std::string userDerivative) {
+  derivative = userDerivative;
+}
+void userFunction::setZeroGuess(double zeroGuess) {
+  zero = zeroGuess;
+}
+void userFunction::setXList(std::vector<double> xs) {
+  xAtnList = xs;
+}
+void userFunction::setAdjustmentList(std::vector<double> adjList) {
+  adjustmentList = adjList;
+}
+void userFunction::setIndex(int i) {
+  index = i;
+}
 
-  // getting and setting the values
-  public:
-    // setters
-    void setFunction(std::string userFunction) {
-      function = userFunction;
-    }
-    void setDerivativeFunction(std::string userDerivative) {
-      derivative = userDerivative;
-    }
-    void setZeroGuess(double zeroGuess) {
-      zero = zeroGuess;
-    }
-    void setXList(std::vector<double> xs) {
-      xAtnList = xs;
-    }
-    void setAdjustmentList(std::vector<double> adjList) {
-      adjustmentList = adjList;
-    }
-    void setIndex(int i) {
-      index = i;
-    }
-  
-    // getters
-    double getFunctionAtX(double x) {
-      double fx;
-      // calculate f(x)
-      return fx;
-    }
-    std::string getFunction() {
-      return function;
-    }
-    double getDerivativeAtX(double x) {
-      double dydx;
-      //calculate dydx
-      return dydx;
-    }
-    std::string getDerivative() {
-      return derivative;
-    }
-    double getZeroGuess() {
-      // won't actually end program LOL
-      return zero;
-    }
-    std::vector<double> getXList() {
-      return xAtnList;
-    }
-    std::vector<double> getAdjList() {
-      return adjustmentList;
-    }
-    int getIndex() {
-      return index;
-    }
-};
+// getters
+std::string userFunction::getFunction() {
+  return function;
+}
+std::string userFunction::getDerivative() {
+  return derivative;
+}
+double userFunction::getFunctionAtX(double x) {
+  double fx;
+  // calculate f(x)
+  return fx;
+}
+double userFunction::getDerivativeAtX(double x) {
+  double dydx;
+  //calculate dydx
+  return dydx;
+}
+double userFunction::getZeroGuess() {
+  // won't actually end program LOL
+  return zero;
+}
+std::vector<double> userFunction::getXList() {
+  return xAtnList;
+}
+std::vector<double> userFunction::getAdjList() {
+  return adjustmentList;
+}
+int userFunction::getIndex() {
+  return index;
+}
